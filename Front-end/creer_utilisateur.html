@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un utilisateur</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Créer un utilisateur</h2>
+
+    <form id="utilisateurForm">
+        <label>Nom</label>
+        <input type="text" name="nom" required>
+
+        <label>Prénom</label>
+        <input type="text" name="prenom" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Mot de passe</label>
+        <input type="password" name="mot_de_passe" required>
+
+        <label>Date de naissance</label>
+        <input type="date" name="date_naiss" required>
+
+        <label>Rôle</label>
+        <select name="role" required>
+            <option value="FORMATEUR">Formateur</option>
+            <option value="DIRECTEUR">Directeur</option>
+            <option value="ETUDIANT">Étudiant</option>
+            <option value="TECHNICIEN">Technicien</option>
+        </select>
+
+        <label>Statut</label>
+        <input type="text" name="statut" value="ACTIF" required>
+
+        <button type="submit">Créer</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<script src="../assets/js/utilisateur.js"></script>
+</body>
+</html>
